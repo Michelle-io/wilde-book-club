@@ -625,3 +625,49 @@ main.home-page h2 {
   font-size: 2rem;
   color: var(--retro-light);
 }
+
+/* Banner */
+.banner {
+  display: grid;
+  place-items: center;
+  height: 400px;
+  margin-top: 3rem;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.789);
+  padding: 1rem 2.5rem;
+  color: var(--gray-darkest);
+}
+
+/* ¨¨¨*********** Banner images ¨¨¨*********** */
+
+/* collections page */
+
+.banner-collections {
+  background-image: url(/assets/images/book-stand.jpg);
+}
+
+/* stories page */
+.banner-stories {
+  background-image: url("/assets/images/stories.jpg");
+}
+
+/* Plays page */
+.banner-plays {
+  background-image: url("/assets/images/plays-banner.jpg");
+  background-position: 20% 40%;
+}
+
+/* Contact us age */
+.banner-contact-us {
+  background-image: url("/assets/images/banner-contact-us.jpg");
+  background-position: 50% 50%;
+}
+
+/* About us Page */
+.banner-about-us {
+  background-image: url("/assets/images/banner-about-us.jpg");
+  background-position: 50% 50%;
+}
