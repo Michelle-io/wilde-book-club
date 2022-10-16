@@ -379,3 +379,37 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* ¨¨¨*********** roots style ¨¨¨*********** */
+:root {
+  /* colors */
+  --primary: #42546f;
+  --gray-light: #ededed;
+  --gray-dark: #d8d9cf;
+  --gray-darkest: #606873;
+  --retro-light: #ff8787;
+  --teal: #5ed9ff;
+
+  /* radius */
+  --radius-full: 0.5rem;
+  --radius-large: 1.5rem;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bad Script", cursive;
+}
