@@ -729,3 +729,145 @@ main.home-page h2 {
   color: var(--gray-light);
   max-width: 1024px;
 }
+
+/* ¨¨¨*********** Media quires ¨¨¨*********** */
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* on screen larger than 640px */
+@media screen and (min-width: 640px) {
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  /* Home page */
+  .welcome-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .welcome-container > div {
+    border: 1px solid var(--retro-light);
+  }
+
+  .welcome-container h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-container img {
+    display: block;
+  }
+
+  .section-home-story div:first-of-type {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .section-home-story div:first-of-type p {
+    height: max-content;
+  }
+
+  .section-home-story h2 {
+    text-align: left;
+  }
+
+  .section-home-quotes > div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .section-home-quotes q {
+    place-self: center;
+  }
+
+  /* Books container used on multiple page  */
+  .container-books-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+  }
+
+  .container-books > div > div {
+    margin-top: 0;
+  }
+}
+
+/* on screen larger than 768px */
+@media screen and (min-width: 768px) {
+  /* Home page */
+
+  .section-home-collection > div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+    padding-bottom: 0;
+    background-color: var(--primary);
+  }
+
+  /* section home collection second direct child div */
+  .section-home-collection > div > div {
+    display: grid;
+    place-items: center;
+    max-height: 382px;
+    padding-inline: 1rem;
+    border-bottom-right-radius: var(--radius-large);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  }
+}
+
+/* on screen larger than 1024px */
+@media screen and (min-width: 1024px) {
+  /* Home page */
+  .section-home-quotes > div {
+    max-width: 750px;
+  }
+
+  .section-home-collection > div > div {
+    max-height: inherit;
+  }
+
+  .section-home-quotes > div:nth-child(even) {
+    margin-left: auto;
+  }
+
+  /* Books container (used on multiple page)*/
+  .container-books-inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 3rem;
+  }
+}
