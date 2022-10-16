@@ -509,3 +509,119 @@ footer p {
   align-items: center;
 }
 
+/* ¨¨¨*********** home page ¨¨¨*********** */
+
+.welcome-container img {
+  display: none;
+}
+
+.home-page > section > div {
+  margin-top: 1.5rem;
+}
+
+/* home page section story */
+.section-home-story div:first-of-type > img {
+  margin-inline: auto;
+}
+
+/* headings */
+main.home-page h2 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* first heading */
+.section-home-story h2:first-of-type {
+  color: var(--gray-light);
+}
+
+/* paragraphs */
+.section-home-story p {
+  padding: 1rem;
+  background-color: var(--primary);
+  color: var(--gray-light);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* second div heading */
+.section-home-collection > div {
+  border-bottom-right-radius: var(--radius-large);
+}
+
+/* second div heading */
+.section-home-collection h2 {
+  color: var(--retro-light);
+}
+
+/* images */
+/* second image element */
+.section-home-collection img {
+  border-top-left-radius: var(--radius-large);
+}
+
+/* second div element */
+.section-home-collection {
+  margin-top: 8rem;
+}
+
+/* second div element collections link */
+.section-home-collection a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  width: 260px;
+  height: max-content;
+  margin-inline: auto;
+  margin-top: 1rem;
+  background-color: var(--primary);
+  color: var(--teal);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+/* section home collection direct child div */
+.section-home-collection > div {
+  padding-bottom: 1rem;
+  min-height: 450px;
+  background-color: var(--gray-dark);
+  border-top-left-radius: var(--radius-large);
+}
+
+/* Home page section quotes */
+.section-home-quotes {
+  margin-top: 8rem;
+}
+
+/* Section quotes all direct divs */
+.section-home-quotes > div {
+  padding-bottom: 1rem;
+  border-radius: 20px 0 20px 0;
+  background-color: var(--gray-dark);
+}
+.section-home-quotes > div:not(:first-of-type) {
+  margin-top: 3.5rem;
+  padding-bottom: 1rem;
+  border-radius: 20px 0 20px 0;
+  background-color: var(--gray-dark);
+}
+
+/* Section quotes all direct divs images */
+.section-home-quotes > div > img {
+  border-radius: 20px 0 0 100px;
+}
+
+/* Section quotes all direct divs quotes */
+.section-home-quotes > div > q {
+  display: block;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  max-width: 275px;
+}
+
+/* Section quotes h2 */
+.section-home-quotes h2 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  color: var(--retro-light);
+}
